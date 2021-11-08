@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="tictactoetemp.css">
+        <title>Tic Tac Toe</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="text">Game state</div>
+        <div class ="main-box">
+            <div class="nine-box">
+                <svg height="100%" width="100%" class="hide" id="topLeftBotRight">
+                    <line x1="0" y1="0" x2="100%" y2="100%" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="botLeftTopRight">
+                    <line x1="100%" y1="100%" x2="0" y2="0" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="topLeftTopRight">
+                    <line x1="0" y1="16.5%" x2="100%" y2="16.5%" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="midLeftMidRight">
+                    <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="botLeftBotRight">
+                    <line x1="0" y1="82.5%" x2="100%" y2="82.5%" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="topLeftBotLeft">
+                    <line x1="16.5%" y1="100%" x2="16.5%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="topMidBotMid">
+                    <line x1="50%" y1="100%" x2="50%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <svg height="100%" width="100%" class="hide" id="topRightBotRight">
+                    <line x1="82.5%" y1="100%" x2="82.5%" y2="0" style="stroke:rgb(0,0,0);stroke-width:2"/>
+                </svg>
+                <table>
+                    <tr>
+                        <td class="grid" id="t0"></td>
+                        <td class="grid" id="t1"></td>
+                        <td class="grid" id="t2"></td>
+                    </tr>
+                    <tr>
+                        <td class="grid" id="t3"></td>
+                        <td class="grid" id="t4"></td>
+                        <td class="grid" id="t5"></td>
+                    </tr>
+                    <tr>
+                        <td class="grid" id="t6"></td>
+                        <td class="grid" id="t7"></td>
+                        <td class="grid" id="t8"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="code.js"></script>
+</html
