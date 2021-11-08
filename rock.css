@@ -23,10 +23,13 @@ body
 #scores
 {
     display:flex;
-    justify-content: space-evenly; 
+    justify-content: space-around; 
     padding-top: 175px;
 }
+
 .score
 {
     font-size: xx-large; color: aliceblue;
+    width: 350px;
+    text-align: center;
 }
