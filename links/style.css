@@ -8,22 +8,23 @@ body{
     display: flex;
     flex-direction: column;
     align-content:center;
-    position: absolute;
 }
 
 button{
     color: darkslategray;
     background-color: lightgray;
+    align-content: center;
     width:30%;
     height:20%;
     margin: 40px;
     border-radius:10px;
 }
 
-#myVideo{
+#ostrichVid{
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
 }
