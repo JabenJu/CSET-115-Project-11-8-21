@@ -9,19 +9,39 @@ body{
     color: lightgrey;
     flex-direction: column;
     align-content:center;
+    vertical-align:middle;align-content: flex-end;
+    
+}
+
+
+h1{
+    margin: 40px;
 }
 
 button{
-    color: darkslategray;
     background-color: lightgray;
-    align-content: center;
+    padding: 50px;
     width:30%;
     height:20%;
-    margin: 40px;
+    margin: 30px;
+    margin-left: 50%;
+    margin-right: 50%;
     border-radius:10px;
+    text-size-adjust: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: darkslategray;
 }
 
 #ostrichVid{
+    opacity: 30%;
+    background-color: white;
     position: fixed;
     right: 0;
     bottom: 0;
