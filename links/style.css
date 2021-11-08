@@ -1,14 +1,16 @@
 *{
-    
     margin: 0;
     padding: 0;    
 }
 
 body{
     display: flex;
+    background-color: darkslateblue;
+    color: lightgrey;
     flex-direction: column;
     align-content:center;
     position: absolute;
+
 }
 
 button{
@@ -20,7 +22,7 @@ button{
     border-radius:10px;
 }
 
-#myVideo{
+#ostrichVid{
     position: fixed;
     right: 0;
     bottom: 0;
