@@ -46,5 +46,4 @@ function gameScissors(){
     compScore += Number(scoreObj[compRPS].scissors)
     player.innerHTML = "Your score: " + playerScore
     compu.innerHTML = "Computer score: " + compScore
-
 }
