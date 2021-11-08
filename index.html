@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exercise1-2Week4</title>
+        <title>Rock-paper-scissors</title>
+        <link rel="stylesheet" href="rock.css">
     </head>
     <body style="background-color: rgb(24,24,24);">
-        <div id="flex" style="
-        display:flex;
-        justify-content: space-evenly; 
-        padding-top: 125px;
-        ">
-            <button onclick="gameRock()"><img src="rock.png" alt="Rock!" style="height: 100px; width: 100px;"></button>
-            <button onclick="gamePaper()"><img src="paper.jpg" alt="Paper!" style="height: 100px; width: 100px;"></button>
-            <button onclick="gameScissors()"><img src="scissors.png" alt="Scissors!" style="height: 100px; width: 100px;"></button>
+        <div id="flex" class="btnHolder">
+            <button onclick="gameRock()"><img src="rock.jpg" alt="Rock!" class="btn"></button>
+            <button onclick="gamePaper()"><img src="paper.jpg" alt="Paper!" class="btn"></button>
+            <button onclick="gameScissors()"><img src="scissors.png" alt="Scissors!" class="btn"></button>
         </div>
         
-        <p id="computer" style="
-        text-align: center;
-        padding-top: 50px;
-        font-size: xx-large;
-        color: aliceblue;
-        ">Computer plays:</p>
+        <p id="computer">Computer plays:</p>
 
-        <div id="scores" style="
-        display:flex;
-        justify-content: space-evenly; 
-        padding-top: 175px;
-        ">
-        <p id="playerScore" style="font-size: xx-large; color: aliceblue;">Your score:</p>
-        <p id="computerScore" style="font-size: xx-large; color: aliceblue;">Computer score:</p>
+        <div id="scores">
+        <p id="playerScore" class="score">Your score:</p>
+        <p id="gameState" class="score"></p>
+        <p id="computerScore" class="score">Computer score:</p>
         </div>
 
-        <script src="Exercise1-2Week4.js"></script>
+        <script src="rockpaperscissors.js"></script>
     </body>
 </html>
