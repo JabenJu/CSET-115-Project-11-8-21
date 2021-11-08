@@ -28,6 +28,8 @@ button{
     margin-right: 50%;
     border-radius:10px;
     text-size-adjust: 20px;
+    text-decoration: none;
+    color: darkslategray;
 }
 
 button:hover{
@@ -35,8 +37,7 @@ button:hover{
 }
 
 button a{
-    text-decoration: none;
-    color: darkslategray;
+    
 }
 
 #ostrichVid{
