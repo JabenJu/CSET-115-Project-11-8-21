@@ -1,0 +1,22 @@
+*{
+    background: url(blissful.jpg) no-repeat center center fixed;
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    position: absolute;
+}
+
+button{
+    color: darkslategray;
+    background-color: lightgray;
+    width:30%;
+    height:20%;
+    margin: 40px;
+    border-radius:10px;
+}

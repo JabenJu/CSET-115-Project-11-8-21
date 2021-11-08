@@ -5,88 +5,45 @@ let scoreObj = {
     paper: {rock: 1, paper: 0.5, scissors: 0},
     scissors: {rock: 0, paper: 1, scissors: 0.5}
 }
-let rps = ["rock", "paper", "scissors"]
-let comp = document.getElementById("computer")
-let player = document.getElementById("playerScore")
-let compu = document.getElementById("computerScore")
-let gamestate = document.getElementById("gameState")
 
 function gameRock(){
+    let rps = ["rock", "paper", "scissors"]
     let compRPS = rps[Math.floor(Math.random()*3)]
+    let comp = document.getElementById("computer")
+    let player = document.getElementById("playerScore")
+    let compu = document.getElementById("computerScore")
     comp.innerHTML = "Computer plays: " + compRPS
     playerScore += Number(scoreObj.rock[compRPS])
     compScore += Number(scoreObj[compRPS].rock)
     player.innerHTML = "Your score: " + playerScore
     compu.innerHTML = "Computer score: " + compScore
     
-    if(Number(scoreObj.rock[compRPS])==0){
-        gamestate.innerHTML = "Computer Win!"
-        gamestate.style.color = "red"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-    if(Number(scoreObj.rock[compRPS])==0.5){
-        gamestate.innerHTML = "Draw!"
-        gamestate.style.color = "blue"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-    if(Number(scoreObj.rock[compRPS])==1){
-        gamestate.innerHTML = "Player Win!"
-        gamestate.style.color = "green"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
+
 }
 
 function gamePaper(){
+    let rps = ["rock", "paper", "scissors"]
     let compRPS = rps[Math.floor(Math.random()*3)]
+    let comp = document.getElementById("computer")
+    let player = document.getElementById("playerScore")
+    let compu = document.getElementById("computerScore")
     comp.innerHTML = "Computer plays: " + compRPS
     playerScore += Number(scoreObj.paper[compRPS])
     compScore += Number(scoreObj[compRPS].paper)
     player.innerHTML = "Your score: " + playerScore
     compu.innerHTML = "Computer score: " + compScore
 
-    if(Number(scoreObj.paper[compRPS])==0){
-        gamestate.innerHTML = "Computer Win!"
-        gamestate.style.color = "red"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-    if(Number(scoreObj.paper[compRPS])==0.5){
-        gamestate.innerHTML = "Draw!"
-        gamestate.style.color = "blue"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-    if(Number(scoreObj.paper[compRPS])==1){
-        gamestate.innerHTML = "Player Win!"
-        gamestate.style.color = "green"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
 }
 
 function gameScissors(){
+    let rps = ["rock", "paper", "scissors"]
     let compRPS = rps[Math.floor(Math.random()*3)]
+    let comp = document.getElementById("computer")
+    let player = document.getElementById("playerScore")
+    let compu = document.getElementById("computerScore")
     comp.innerHTML = "Computer plays: " + compRPS
     playerScore += Number(scoreObj.scissors[compRPS])
     compScore += Number(scoreObj[compRPS].scissors)
     player.innerHTML = "Your score: " + playerScore
     compu.innerHTML = "Computer score: " + compScore
-
-    if(Number(scoreObj.scissors[compRPS])==0){
-        gamestate.innerHTML = "Computer Win!"
-        gamestate.style.color = "red"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-    if(Number(scoreObj.scissors[compRPS])==0.5){
-        gamestate.innerHTML = "Draw!"
-        gamestate.style.color = "blue"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-    if(Number(scoreObj.scissors[compRPS])==1){
-        gamestate.innerHTML = "Player Win!"
-        gamestate.style.color = "green"
-        setTimeout(function(){ resetState(); }, 2000);
-    }
-}
-
-function resetState() {
-    gamestate.innerHTML = ""
-    gamestate.style.color = ""
 }

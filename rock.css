@@ -1,0 +1,32 @@
+body
+{
+    background-color: rgb(24,24,24);
+}
+.btnHolder
+{
+    display:flex;
+    justify-content: space-evenly; 
+    padding-top: 125px;
+}
+.btn
+{
+    height: 100px;
+    width: 100px;
+}
+#computer
+{
+    text-align: center;
+    padding-top: 50px;
+    font-size: xx-large;
+    color: aliceblue;
+}
+#scores
+{
+    display:flex;
+    justify-content: space-evenly; 
+    padding-top: 175px;
+}
+.score
+{
+    font-size: xx-large; color: aliceblue;
+}
