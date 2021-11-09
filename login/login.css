@@ -15,6 +15,16 @@ body {
     background-size: cover;
 }
 
+.header{
+    margin: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
+    color:white
+}
+
 #loginForm {
     height: 100%;
     width: 40%;
@@ -33,16 +43,6 @@ body {
     align-items: center;
     flex-flow: column nowrap;
     width: 100%;
-}
-
-.header{
-    margin: 0;
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4vh;
-    color:white
 }
 
 input{
