@@ -77,3 +77,43 @@ th, td
 {
     padding: 10px;
 }
+
+#profileDropdown {
+    background-color: #04AA6D;
+    color: black;
+    height: 120px;
+    width: 120px;
+    border-radius: 15%;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    right: 15px;
+    top: 15px;
+  }
+
+#avatarDrop{
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    border-radius: 25%;
+  }
+
+#dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+#profileDropdown:hover #dropdownContent{
+    display: block;
+}
+
+#profileDropdown:hover #avatarDrop {
+    background-color: #3e8e41;
+}
