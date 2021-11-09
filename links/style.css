@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+    box-sizing: border-box;  
 }
 
 html { 
@@ -8,7 +9,7 @@ html {
 }
 
 body{
-    color: lightgrey;
+    color: darkblue;
     background: url(../images/blissful.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,25 +19,61 @@ body{
 
 
 h1{
-    margin-left: 12%;
-    margin-top: 7%;
-    margin-bottom: 4%;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 24px;
 }
 
 button{
     background-color: lightgray;
     padding: 50px;
-    width:30%;
-    height:20%;
-    margin: 30px;
-    margin-left: 50%;
-    margin-right: 50%;
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius:10px;
-    text-size-adjust: 20px;
+    font-size: 40px;
     text-decoration: none;
     color: darkslategray;
 }
 
 button:hover{
     cursor: pointer;
+}
+
+.notFlex
+{
+    width:600px;
+    margin-left:50px;
+}
+
+.flex
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.tableHolder
+{
+    margin-right:400px;
+    width:358px;
+}
+
+table
+{
+    margin-top: 74px;
+}
+
+table, th, td
+{
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+    border-collapse: collapse;
+}
+
+th, td
+{
+    padding: 10px;
 }
