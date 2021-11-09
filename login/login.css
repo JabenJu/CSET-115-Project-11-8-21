@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-width: 0;
+    outline: none;
+}
+
+body {
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#loginForm {
+    height: 60%;
+    width: 25%;
+    background-color: rgba(237, 237, 237, 0.7);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+#loginForm form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 10vh;
+    color: rgb(100, 100, 100);
+}
+
+input{
+    border-color: rgb(100, 100, 100);
+}
+
+input[type="submit"] {
+    margin-top: 5vh;
+    height: 3.5vh;
+    width: 30%;
+    border-radius: 3px;
+}
+
+input[type="text"] {
+    width: 55%;
+    height: 3.5vh;
+    text-indent: 1em;
+    border-radius: 3px;
+}
