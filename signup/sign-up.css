@@ -1,5 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background: url(background.jpg) no-repeat center center fixed; 
+    background: url(../images/blissful.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,18 +17,16 @@ body {
     top: 27%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:rgb(38, 6, 97);
+    color:white
 }
 
 #sign-up{
-    height: 70%;
-    width: 30%;
-    background-color: rgba(237, 237, 237, 0.7);
-    margin: 0;
+    height: 100%;
+    width: 40%;
+    color: white;
+    background-color: #2c6bbdf3;
+    margin: 0px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     display: flex;
     justify-content: center;

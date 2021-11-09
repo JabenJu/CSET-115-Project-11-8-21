@@ -2,8 +2,8 @@
 <head>
     <link rel="stylesheet" href="login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../signup/sign-up.js"></script>
-    <script src="login.js"></script>
+    <script src="sign-in.js"></script>
+    <script src="Login.js"></script>
     <title>Login Page</title>
 </head>
 <body>
@@ -11,8 +11,8 @@
         <h1>Login</h1>
         <form>
             <input type="text" placeholder="Username" class="input" id="loginUsername" name="username" value=""><br>
-            <input type="text" placeholder="Email" class="input" id="loginEmail" name="email" value=""><br><br>
-            <button type="button" onclick="login()">Log in</button>
+            <input type="text" placeholder="Password" class="input" id="loginPassword" name="password" value=""><br><br>
+            <button type="button" id="loginButton" onclick="login()">Log in</button>
         </form>
     </div>
 </body>
