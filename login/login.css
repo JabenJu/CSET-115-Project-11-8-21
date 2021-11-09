@@ -24,7 +24,6 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: column nowrap;
 }
 
@@ -36,11 +35,14 @@ body {
     width: 100%;
 }
 
-h1 {
-    height: 7vh;
-    color: white;
-    font-size: 7vh;
-    margin-bottom: 3vh;
+.header{
+    margin: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vh;
+    color:white
 }
 
 input{
@@ -54,7 +56,8 @@ input[type="submit"] {
     margin-top: 5vh;
     height: 3.5vh;
     width: 30%;
-    border-radius: 0.2vh; 
+    border: hidden;
+    border-radius: 0.4vh; 
 }
 
 input[type="text"] {
@@ -64,11 +67,10 @@ input[type="text"] {
     border-radius: 0.2vh;
 }
 
-#loginButton{
+#loginBtn{
     height: 6vh;
     width: 12vh;
     font-size: 2.5vh;
-    padding: 0.5vh 3vh;
-    border: solid white;
-
+    padding: 0.5vh 1.5vh;
+    border: solid white 0.5vh;
 }
