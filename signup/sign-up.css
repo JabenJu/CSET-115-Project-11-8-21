@@ -16,12 +16,10 @@ body {
 }
 
 .header{
-    margin: 0;
-    position: absolute;
-    top: 27%;
-    left: 50%;
-    font-size: 4vh;
-    transform: translate(-50%, -50%);
+    margin-top: 5vh;
+    margin-left: 20vh;
+    margin-bottom: 10vh;
+    font-size: 4vh;;
     color:white
 }
 
