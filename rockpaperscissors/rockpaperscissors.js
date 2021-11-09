@@ -32,6 +32,8 @@ function gameRock(){
     if(Number(scoreObj.rock[compRPS])==1){
         gamestate.innerHTML = "Player Win!"
         gamestate.style.color = "green"
+        localStorage.setItem("RPSscore", Number(localStorage.getItem("RPSscore"))+1)
+        console.log(localStorage.getItem("RPSscore"))
         setTimeout(function(){ resetState(); }, 2000);
     }
 }
@@ -57,6 +59,8 @@ function gamePaper(){
     if(Number(scoreObj.paper[compRPS])==1){
         gamestate.innerHTML = "Player Win!"
         gamestate.style.color = "green"
+        localStorage.setItem("RPSscore", Number(localStorage.getItem("RPSscore"))+1)
+        console.log(localStorage.getItem("RPSscore"))
         setTimeout(function(){ resetState(); }, 2000);
     }
 }
@@ -82,6 +86,8 @@ function gameScissors(){
     if(Number(scoreObj.scissors[compRPS])==1){
         gamestate.innerHTML = "Player Win!"
         gamestate.style.color = "green"
+        localStorage.setItem("RPSscore", Number(localStorage.getItem("RPSscore"))+1)
+        console.log(localStorage.getItem("RPSscore"))
         setTimeout(function(){ resetState(); }, 2000);
     }
 }
