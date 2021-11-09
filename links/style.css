@@ -20,7 +20,7 @@ body{
 
 h1{
     text-align: center;
-    margin-top: 42px;
+    margin-top: 150px;
     margin-bottom: 24px;
 }
 
@@ -45,7 +45,8 @@ button:hover{
 .notFlex
 {
     width:600px;
-    margin-left:50px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .flex
@@ -56,13 +57,16 @@ button:hover{
 
 .tableHolder
 {
-    margin-right:400px;
+    margin-left: auto;
+    margin-right: auto;
     width:358px;
 }
 
 table
 {
     margin-top: 74px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, th, td
