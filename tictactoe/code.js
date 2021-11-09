@@ -19,6 +19,10 @@ const errorMsg = "Please pick an empty space!"
 var winSfx = new Audio('congrats.mp3');
 var drawSfx = new Audio('quack.mp3');
 
+let PlayerX = prompt("Player X, please imput your username!");
+let PlayerO = prompt("Player Y, please imput your username!");
+
+
 function updateGameState(num){
     if(!spaces[num] == "") {
         console.log("Help me")
@@ -139,6 +143,10 @@ function gameOver(result) {
         activePlayer = "X"
         messageBox.innerHTML = "Player X wins!"
         setTimeout(function() { restart(); }, 2000);
+        if(PlayerX == localStorage.getItem("username")) {
+            localStorage.setItem("TTTscore", Number(localStorage.getItem("TTTscore"))+1)
+            console.log(localStorage.getItem("TTTscore"))
+        }
     }
     if(result == "o"){
         console.log("win")
@@ -146,6 +154,10 @@ function gameOver(result) {
         activePlayer = "O"
         messageBox.innerHTML = "Player O wins!"
         setTimeout(function() { restart(); }, 2000);
+        if(PlayerO == localStorage.getItem("username")) {
+            localStorage.setItem("TTTscore", Number(localStorage.getItem("TTTscore"))+1)
+            console.log(localStorage.getItem("TTTscore"))
+        }
     }
     if(result == "draw"){
         console.log("win")
@@ -183,3 +195,4 @@ gridItems[5].addEventListener("click", function(){ updateGameState(5); })
 gridItems[6].addEventListener("click", function(){ updateGameState(6); })
 gridItems[7].addEventListener("click", function(){ updateGameState(7); })
 gridItems[8].addEventListener("click", function(){ updateGameState(8); })
+
