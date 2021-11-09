@@ -1,33 +1,33 @@
-let ipassword = null
+let iemail = null
 let iusername = null
-let lpassword = null
+let lemail = null
 let lusername = null
 
-let wrongpassword = null
+let wrongemail = null
 let wrongusername = null
-let fpassword = null
+let femail = null
 let fusername = null
 
 
 
 function login(){
-    ipassword = document.getElementById("loginPassword").value
+    iemail = document.getElementById("loginEmail").value
     iusername = document.getElementById("loginUsername").value
     lusername = localStorage.getItem("username")
-    lpassword = localStorage.getItem("password")
-    wrongpassword = document.getElementById("wrongPassword")
+    lemail = localStorage.getItem("email")
+    wrongemail = document.getElementById("wrongemail")
     wrongusername = document.getElementById("wrongUsername")
-    fpassword = document.getElementById("loginPassword")
+    femail = document.getElementById("loginEmail")
     fusername = document.getElementById("loginUsername")
 
-    let budgetPageUrl = "budget.html"
-    if(ipassword === lpassword && iusername === lusername){
-        location = budgetPageUrl;
+    let gamePageUrl = "../links/game-link.html"
+    if(iemail === lemail && iusername === lusername){
+        location = gamePageUrl;
     }
 
-    if(ipassword != lpassword){
-        wrongpassword.show
-        fpassword.style.borderColor = "red";
+    if(iemail != lemail){
+        wrongemail.show
+        femail.style.borderColor = "red";
     }
 
     if(iusername != lusername){
