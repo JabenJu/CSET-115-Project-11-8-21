@@ -3,29 +3,40 @@
     padding: 0;    
 }
 
-body{
-    display: flex;
-    background-color: darkslateblue;
-    color: lightgrey;
-    flex-direction: column;
-    align-content:center;
-    position: absolute;
+html { 
+    overflow: hidden;
+}
 
+body{
+    color: lightgrey;
+    background: url(../images/blissful.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+h1{
+    margin-left: 12%;
+    margin-top: 7%;
+    margin-bottom: 4%;
 }
 
 button{
-    color: darkslategray;
     background-color: lightgray;
+    padding: 50px;
     width:30%;
     height:20%;
-    margin: 40px;
+    margin: 30px;
+    margin-left: 50%;
+    margin-right: 50%;
     border-radius:10px;
+    text-size-adjust: 20px;
+    text-decoration: none;
+    color: darkslategray;
 }
 
-#ostrichVid{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+button:hover{
+    cursor: pointer;
 }
