@@ -8,16 +8,17 @@
         <title>Sign Up</title>
     </head>
 <body>  
+
+    <div id="sign-up">
         <div class="header">
             <h1>Sign Up<h1>
         </div>
-    <div id="sign-up">
         <form action="log-in.html">
             <label for="username">Username</label><br>
-            <input type="text" id="username" name="Username"><br><br>
+            <input type="text" placeholder="Username" id="username" name="Username"><br><br>
             <label for="password">Email</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <button type="button" onclick="signUp()">Submit</button>
+            <input type="text" placeholder="example@email.com" id="email" name="email"><br><br>
+            <button type="button" id="submitBtn" onclick="signUp()">Submit</button>
         </form>
     </div>
 </body>

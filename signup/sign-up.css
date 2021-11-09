@@ -1,6 +1,10 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    outline-width: 0;
+    outline: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 body {
@@ -16,6 +20,7 @@ body {
     position: absolute;
     top: 27%;
     left: 50%;
+    font-size: 4vh;
     transform: translate(-50%, -50%);
     color:white
 }
@@ -34,6 +39,18 @@ body {
     flex-flow: column nowrap;
 }
 
-#username, #password{
-    margin-top:10px;
+#username, #email{
+    width: 55%;
+    height: 7vh;
+    text-indent: 1.6vh;
+    border-radius: 0.2vh;
+    border: hidden
+}
+
+#submitBtn{
+    height: 6vh;
+    width: 12vh;
+    font-size: 2.5vh;
+    padding: 0.5vh 3vh;
+    border: solid white;
 }
