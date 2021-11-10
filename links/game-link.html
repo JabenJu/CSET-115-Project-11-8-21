@@ -6,17 +6,19 @@
     </head>
         
     <body>
-        <div class="flex">
-            
-            <div id="profileDropdown">
-                <img id="avatarDrop" src="../images/paper.jpg">
-                <div id="dropdownContent">
-                    <div id="username">Username</div>
-                    <div id="email">Email</div>
-                    <div id="rockPaperScore">000</div>
-                    <div id="ticTacScore">000</div>
-                </div>
+
+        <div id="profileDropdown">
+            <img id="avatarDrop" src="../images/paper.jpg">
+            <div id="dropdownContent">
+                <div class="dropFlex"><div>Username:</div> <div id="usernameDropdown">Temp</div></div>
+                <div class="dropFlex"><div>Email:</div> <div id="emailDropdown">Temp</div></div>
+                <div class="dropFlex"><div>TicTacToe Wins:</div> <div id="TTTDropdown">Temp</div></div>
+                <div class="dropFlex"><div>RckPprScs Wins:</div> <div id="RPSDropdown">Temp</div></div>
+                <a href="../signup/sign-up.html">Sign Out</a>
             </div>
+        </div>
+
+        <div class="flex">
 
             <div class="notFlex">
                 <h1>Select A Game</h1>
@@ -24,5 +26,6 @@
                 <a href="../rockpaperscissors/rockpaperscissors.html"><button class="">Rock Paper Scissors</button></a>
             </div>
         </div>
+        <script src="game-link.js"></script>
     </body>
 </html>
