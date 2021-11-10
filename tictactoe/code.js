@@ -19,8 +19,11 @@ const errorMsg = "Please pick an empty space!"
 var winSfx = new Audio('congrats.mp3');
 var drawSfx = new Audio('quack.mp3');
 
+let PlayerNum = prompt("Number of players: 1 or 2?")
 let PlayerX = prompt("Player X, please imput your username!");
-let PlayerO = prompt("Player Y, please imput your username!");
+if(PlayerNum == 2){
+    let PlayerO = prompt("Player Y, please imput your username!");
+}
 
 
 function updateGameState(num){
@@ -39,6 +42,18 @@ function updateGameState(num){
     console.log(spaces)
 }
 
+function aiTurn(){
+    let compTurn = Math.floor(Math.random()*9)
+    if(spaces[compTurn] == ""){
+        spaces[compTurn] = "O"
+        activePlayer = "X"
+        updateGrid()
+    }
+    else{
+        aiTurn()
+    }
+}
+
 function updateGrid() {
     for(i=0; i<gridItems.length; i++) {
         gridItems[i].innerHTML = spaces[i]
@@ -49,9 +64,14 @@ function updateGrid() {
             gridItems[i].style.color = "#3399FF"
         }
     }
-    
+
     winChecker()
+
+    if(PlayerNum == 1 && activePlayer === "O"){
+        aiTurn()
+    }
 }
+
 function winChecker() {
     console.log("check win")
     for(i=0; i<winCon.length; i++){
@@ -154,7 +174,7 @@ function gameOver(result) {
         activePlayer = "O"
         messageBox.innerHTML = "Player O wins!"
         setTimeout(function() { restart(); }, 2000);
-        if(PlayerO == localStorage.getItem("username")) {
+        if(playersNum == 2 && PlayerO == localStorage.getItem("username")) {
             localStorage.setItem("TTTscore", Number(localStorage.getItem("TTTscore"))+1)
             console.log(localStorage.getItem("TTTscore"))
         }
