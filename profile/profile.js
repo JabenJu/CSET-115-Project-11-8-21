@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //$("#RPSwins").html(RPSwins)
 });
 
-$("table").hover(function(){
-    $("#TTTwins").html(TTTwins)
-    $("#RPSwins").html(RPSwins)
-});
+// $("table").hover(function(){
+//     $("#TTTwins").html(TTTwins)
+//     $("#RPSwins").html(RPSwins)
+// });
