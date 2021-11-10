@@ -87,11 +87,12 @@ th, td
     color: black;
     height: 120px;
     width: 120px;
-    border-radius: 25%;
+    border-radius: 50%;
     font-size: 16px;
     border: none;
-    right: 15px;
-    top: 15px;
+    float: right;
+    margin-top: 5vh;
+    margin-right: 8vh;
   }
 
 #avatarDrop{
@@ -105,11 +106,22 @@ th, td
 #dropdownContent{
     display: none;
     position: absolute;
+    right: 1%;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding: 1vh;
   }
+
+#dropdownContent div{
+    padding-bottom: 1vh;
+}
+
+.dropFlex {
+    display: flex;
+    justify-content: space-between;
+}
 
 #profileDropdown:hover #dropdownContent{
     display: block;
@@ -117,4 +129,5 @@ th, td
 
 #profileDropdown:hover #avatarDrop {
     background-color: #3e8e41;
+    border-radius: 50%;
 }
