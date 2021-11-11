@@ -20,9 +20,9 @@ var winSfx = new Audio('congrats.mp3');
 var drawSfx = new Audio('quack.mp3');
 
 let PlayerNum = prompt("Number of players: 1 or 2?")
-let PlayerX = prompt("Player X, please imput your username!");
+let PlayerX = localStorage.getItem("username")
 if(PlayerNum == 2){
-    let PlayerO = prompt("Player Y, please imput your username!");
+    let PlayerO = prompt("Player 2, please imput your username!");
 }
 
 

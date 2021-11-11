@@ -13,9 +13,9 @@ let gamestate = document.getElementById("gameState")
 let currentSymbol = null
 
 let PlayerNum = prompt("Number of players: 1 or 2?")
-let PlayerX = prompt("Player X, please imput your username!");
+let PlayerX = localStorage.getItem("username")
 if(PlayerNum == 2){
-    let PlayerO = prompt("Player Y, please imput your username!");
+    let PlayerO = prompt("Player 2, please imput your username!");
 }
 
 function gameRock(){
